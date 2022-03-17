@@ -4,8 +4,9 @@ https://leetcode.com/problems/maximum-subarray/
 **/
 
 //solution apply's KADANE's algorithm with the consideration that
-// there could be no positive integers,thus maximum subarray would be the maximim value
-** q1) why are we are comparing 0 with current_sum?
+//there could be no positive integers,thus maximum subarray would be the maximim value
+
+/** q1) why are we are comparing 0 with current_sum?
 the answer is that current_sum is the addition of elements i to j when we are getting something that is less than 0,then that means subarray can not be
 from i to j(where array is from i to n), so, we reset current_sum to 0. We update the best_sum after traversing every element**/
 
